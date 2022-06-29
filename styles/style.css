@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+:root {
+    --preto: #0c151d;
+    --azul: #2F9BF4;
+}
+
+/* Resets */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Cera Round Pro Light', Arial, sans-serif;
+    background-color: var(--preto);
+    color: white;
+}
+
+header {
+    padding-top: 10vh;
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Sobre mim */
+
+.profile-border {
+    margin: 0 auto;
+    border: 3px solid var(--azul);
+    display: flex;
+    padding-top: 5px;
+    border-radius: 50%;
+    width: 160px;
+}
+
+div.img-eu {
+    width: 140px;
+    margin: 0 auto;
+}
+
+.sobre-mim {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.sobre-mim h1 {
+    font-family: 'Cera Round Pro Medium';
+    font-size: 2.25em;
+}
+
+.sobre-mim p {
+    color: lightgray;
+    font-weight: bold;
+}
+
+/* Redes Sociais */
+
+.sociais {
+    margin: 0px auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    max-width: 90px;
+}
+
+.sociais ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sociais a:hover {
+    color: #2F9BF4;
+    transition: 0.5s;
+}
+
+.sociais i {
+    font-size: 1.4em;
+}
+
+/* Experiencias */
+
+.experiencia {
+    align-self: center;  
+    margin-left: 10px;
+}
+
+.experiencia ul {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex: 1;
+    column-gap: 20px;
+}
+
+.experiencia strong {
+    font-family: 'Cera Round Pro Black';
+    font-size: 1.22em;
+    color: white;
+}
+
+.experiencia p {
+    color: lightgray;
+}
