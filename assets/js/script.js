@@ -1,3 +1,6 @@
+/* Tabs */
+
+
 /* Animação */
 
 const sr = ScrollReveal({

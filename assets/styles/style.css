@@ -101,8 +101,7 @@ div.img-eu {
 /* Experiencias */
 
 .experiencia {
-    align-self: center;  
-    margin-left: 10px;
+    align-self: center;
 }
 
 .experiencia ul {
@@ -130,6 +129,7 @@ main {
     margin: 20px auto;
     max-width: 960px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -165,6 +165,7 @@ main {
 
 .contato > ul {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -183,4 +184,56 @@ main {
 
 .contato i {
     font-size: 1.25em;
+}
+
+@media (max-width: 340px) {
+    main {
+        position: absolute;
+        left: 20%;
+    }
+    .contato ul {
+        margin-top: 50px;
+    }
+}
+
+/* Filtros */
+
+.sections {
+    max-width: 960px;
+    margin: 20px auto;
+}
+
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 10px;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #171F26;
+}
+
+.buttons {
+    font-size: 0.9em;
+    padding: 20px 0px;
+    width: 155px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    background-color: #171F26;
+    cursor: pointer;
+}
+
+.buttons:hover {
+    background-color: var(--preto);
+    transition: 0.3s;
+}
+
+.tab-ativo {
+    background-color: var(--preto);
+}
+
+section {
+    display: none;
 }
