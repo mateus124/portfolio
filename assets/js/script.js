@@ -1,5 +1,23 @@
 /* Tabs */
 
+const tabs = document.querySelectorAll('[data-target]')
+const tabContents = document.querySelectorAll('[data-content]')
+
+tabs.forEach(tab =>{
+    tab.addEventListener('click', () =>{
+        const target = document.querySelector(tab.dataset.target)
+
+        tabContents.forEach(tc =>{
+            tc.classList.remove('filtro-ativo')
+        })
+        target.classList.add('filtro-ativo')
+
+        tabs.forEach(t =>{
+            t.classList.remove('tab-ativo')
+        })
+        tab.classList.add('tab-ativo')
+    })
+})
 
 /* Animação */
 
@@ -16,3 +34,4 @@ sr.reveal(`.sobre-mim`, {delay: 600});
 sr.reveal(`.sociais`, {delay: 700});
 sr.reveal(`.experiencia`, {interval: 100, delay: 700});
 sr.reveal(`.extra`, {delay: 800});
+sr.reveal(`.tabs`, {delay: 900});
