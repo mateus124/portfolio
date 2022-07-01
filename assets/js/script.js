@@ -35,3 +35,4 @@ sr.reveal(`.sociais`, {delay: 700});
 sr.reveal(`.experiencia`, {interval: 100, delay: 700});
 sr.reveal(`.extra`, {delay: 800});
 sr.reveal(`.tabs`, {delay: 900});
+sr.reveal(`.filtro-ativo`, {delay: 950});
