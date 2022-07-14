@@ -390,12 +390,12 @@ footer {
 /* Breakpoints */
 
 @media (max-width: 340px) {
-    main {
-        position: absolute;
-        left: 20%;
+    .extra > .curriculo {
+        margin: 20px auto;
     }
-    .contato ul {
-        margin-top: 50px;
+    .extra > .contato {
+        margin: 0px auto;
+        margin-top: 30px;
     }
 }
 
@@ -403,5 +403,12 @@ footer {
     .habilidades {
         flex-direction: column;
         right: 40%;
+    }
+}
+
+@media (max-width: 325px) {
+    .front ul, .back ul {
+        max-height: none;
+        margin-left: 40%;
     }
 }
