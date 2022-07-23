@@ -250,7 +250,7 @@ main {
 .projetos {
     display: flex;
     flex-wrap: wrap;
-    max-width: 750px;
+    max-width: 960px;
     column-gap: 30px;
     row-gap: 30px;
     justify-content: center;
@@ -278,6 +278,7 @@ main {
     align-items: flex-end;
     padding: 1.5rem 1.25rem;
     transition: .3s;
+    text-shadow: #000 2px 1px 1px;
 }
 
 .projeto-titulo, .projeto-subtitulo {
