@@ -392,6 +392,19 @@ footer {
     padding: 20px;
 }
 
+/*Scroll*/
+
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: var(--preto);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #2F9BF4;
+    border-radius: 50px;
+    border: 2px solid #1A1624;
+}
+
 
 /* Breakpoints */
 
