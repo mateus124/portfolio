@@ -312,10 +312,8 @@ main {
 .habilidades {
     display: flex;
     flex-wrap: wrap;
-    position: relative;
-    right: 10%;
     gap: 0 250px;
-    justify-content: space-around;
+    margin-right: 80px;
 }
 
 /* Frontend */
@@ -389,7 +387,7 @@ footer {
     max-width: 960px;
     text-align: center;
     color: lightgray;
-    padding: 20px;
+    padding-bottom: 20px;
 }
 
 /*Scroll*/
@@ -422,6 +420,9 @@ footer {
     .habilidades {
         flex-direction: column;
         right: 40%;
+    }
+    .back {
+        margin-top: 50px;
     }
 }
 
